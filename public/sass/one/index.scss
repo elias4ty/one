@@ -1,0 +1,97 @@
+@import "./common/reset";
+
+$index-color : #F2F2F2;
+
+body{
+  background-color: $index-color;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 40px;
+  background-color: $bc-color;
+
+  .head-div{
+    margin: 5px 10px 0 14px;
+    position: relative;
+
+    p{
+      display: inline-block;
+    }
+
+    .head-left{
+      color: black;
+      font-family:fantasy;
+
+      .ls1{
+        font-size: 26px;
+        margin-right: 3px;
+        vertical-align: middle;
+      }
+
+      .ls2{
+        font-size: 12px;
+        vertical-align: bottom;
+        line-height: 20px;
+      }
+    }
+
+    .head-right{
+      float: right;
+      vertical-align: bottom;
+      font-size: 12px;
+      color: $font-color;
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+
+      span{
+        margin-right: 3px;
+      }
+    }
+  }
+}
+
+.main-item{
+  margin-bottom: 3px;
+  background-color: $bc-color;
+  width: 100%;
+  font-size: 14px;
+  color: $font-color;
+}
+
+.main{
+  margin-top: 40px;
+}
+
+.xiaoji{
+  figure{
+    .x-img{
+        position: relative;
+
+        img{
+          width: 100%;
+        }
+
+        p{
+          position: absolute;
+          bottom: 16px;
+          right: 22px;
+          background-color: #21252B;
+          border-radius: 30%;
+
+          i{
+            height: 6px;
+            background: url('/resource/images/favorites.png')
+          }
+
+          span{
+            font-size: 12px;
+            color:$bc-color;
+          }
+        }
+    }
+  }
+}

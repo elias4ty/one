@@ -1,6 +1,6 @@
-exports.getCtr = function* (){
+exports.getHtml = async (ctx) => {
     console.log('index')
-    this.body = this.nun.render('one/index.html',{
+    ctx.body = this.nun.render('one/index.html',{
       title : 'shouye'
     });
 }

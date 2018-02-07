@@ -8,13 +8,13 @@ gulp.task('css',() => {
     gulp.src('./public/sass/**/*.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(gulp.desc('./static/css/'))
+    .pipe(gulp.dest('./static/css/'))
 })
 
 gulp.task('js',() => {
   gulp.src('./public/js/**/*.js')
   .pipe(babel())
-  .pipe(gulp.desc('/static/js'))
+  .pipe(gulp.dest('/static/js'))
 })
 
 gulp.task('connect',() => {
